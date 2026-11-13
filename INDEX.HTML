@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Blog Tech</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef4fa;
+    color: #102f50;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(120deg, #084578, #087edb);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+nav {
+    background: #071d36;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #65c5ff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 22px;
+    align-items: start;
+}
+
+.post, .sidebar-box {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 18px #183d5b12;
+}
+
+.post-content {
+    padding: 22px;
+}
+
+.post img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+    border-radius: 9px;
+}
+
+.category {
+    color: #0784d9;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #0872c5;
+    margin: 8px 0;
+}
+
+h3 {
+    color: #0872c5;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.read-more {
+    display: inline-block;
+    background: #087bd1;
+    color: white;
+    padding: 10px 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.read-more:hover {
+    background: #07599b;
+}
+
+.sidebar-title {
+    background: #0870c4;
+    color: white;
+    padding: 12px 18px;
+    margin: 0;
+}
+
+.sidebar-content {
+    padding: 15px 20px;
+}
+
+.sidebar-content a {
+    color: #0870c4;
+    text-decoration: none;
+}
+
+.sidebar-content li {
+    margin-bottom: 9px;
+}
+
+.tip {
+    background: #edf7ff;
+    border-left: 4px solid #087bd1;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+pre {
+    background: #071d36;
+    color: #d9f0ff;
+    padding: 15px;
+    border-radius: 9px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 13px;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+footer {
+    background: #071d36;
+    color: white;
+    text-align: center;
+    padding: 24px 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 750px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .post img {
+        height: 230px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header id="inicio">
+    <h1>💻 Meu Blog Tech</h1>
+    <p>Compartilhando conhecimento sobre tecnologia e programação</p>
+</header>
+
+<nav>
+    <a href="#inicio">⌂ Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#publicacoes">Publicações</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+
+<main id="publicacoes">
+
+    <!-- PUBLICAÇÃO PRINCIPAL: MANTÉM A IMAGEM ANTIGA -->
+    <article class="post" id="primeiro-post">
+        <div class="post-content">
+            <img src="./images%201.jpg"
+                 alt="Tecnologia e inteligência artificial">
+
+            <span class="category">Tecnologia</span>
+            <h2>Meu primeiro post</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <p>
+                Boas-vindas ao meu novo blog! Aqui vou compartilhar
+                dicas sobre programação, novidades e curiosidades
+                da área de tecnologia.
+            </p>
+
+            <a class="read-more" href="#dicas">
+                Saiba mais →
+            </a>
+        </div>
+    </article>
+
+    <!-- PUBLICAÇÃO 2 -->
+    <article class="post" id="dicas">
+        <div class="post-content">
+            <span class="category">Dicas e tutoriais</span>
+            <h2>🚀 5 dicas para começar a programar</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <p>
+                Aprender programação pode parecer difícil no começo,
+                mas com prática e dedicação você consegue evoluir.
+            </p>
+
+            <h3>Confira as dicas:</h3>
+            <ul>
+                <li>Estude um pouco todos os dias.</li>
+                <li>Comece com HTML e CSS.</li>
+                <li>Pratique criando pequenos projetos.</li>
+                <li>Pesquise quando encontrar erros.</li>
+                <li>Não desista quando algo não funcionar.</li>
+            </ul>
+
+            <div class="tip">
+                💡 <strong>Dica:</strong> crie seu próprio site
+                para colocar em prática o que aprender.
+            </div>
+        </div>
+    </article>
+
+    <!-- PUBLICAÇÃO 3 -->
+    <article class="post" id="html-css">
+        <div class="post-content">
+            <span class="category">Programação</span>
+            <h2>💻 Como criar sua primeira página HTML</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <p>
+                O HTML é utilizado para organizar o conteúdo
+                de uma página. Veja um exemplo simples:
+            </p>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Meu site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+    &lt;p&gt;Meu primeiro site.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <p>
+                Salve o arquivo com o nome
+                <strong>index.html</strong> e abra no navegador.
+            </p>
+        </div>
+    </article>
+
+    <!-- PUBLICAÇÃO 4 -->
+    <article class="post" id="inteligencia-artificial">
+        <div class="post-content">
+            <span class="category">Inteligência artificial</span>
+            <h2>🤖 O que é inteligência artificial?</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <p>
+                A inteligência artificial, também conhecida como IA,
+                é uma tecnologia que permite que sistemas realizem
+                tarefas como analisar informações, reconhecer padrões
+                e produzir textos.
+            </p>
+
+            <h3>Onde encontramos a IA?</h3>
+            <ul>
+                <li>Assistentes virtuais.</li>
+                <li>Tradutores automáticos.</li>
+                <li>Aplicativos de estudo.</li>
+                <li>Ferramentas de programação.</li>
+            </ul>
+
+            <div class="tip">
+                💡 <strong>Curiosidade:</strong> a IA pode ajudar
+                você a estudar programação, mas é importante
+                conferir as respostas e entender o código.
+            </div>
+        </div>
+    </article>
+
+    <!-- PUBLICAÇÃO 5 -->
+    <article class="post" id="css">
+        <div class="post-content">
+            <span class="category">Programação</span>
+            <h2>🎨 Para que serve o CSS?</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <p>
+                O CSS controla a aparência de um site:
+                cores, tamanhos, espaçamento e organização
+                dos elementos.
+            </p>
+
+            <p>Veja como mudar a cor de um título:</p>
+
+            <pre><code>h1 {
+    color: #087bd1;
+    font-size: 32px;
+    text-align: center;
+}</code></pre>
+
+            <p>
+                Você pode usar esse código para deixar
+                seus títulos azuis e centralizados.
+            </p>
+        </div>
+    </article>
+
+    <!-- PUBLICAÇÃO 6 -->
+    <article class="post" id="seguranca">
+        <div class="post-content">
+            <span class="category">Segurança digital</span>
+            <h2>🔐 Como proteger suas contas na internet</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <p>
+                A segurança digital ajuda a proteger suas informações,
+                suas contas e seus dispositivos.
+            </p>
+
+            <ul>
+                <li>Use senhas fortes e diferentes.</li>
+                <li>Ative a verificação em duas etapas.</li>
+                <li>Não clique em links suspeitos.</li>
+                <li>Atualize seus aplicativos.</li>
+                <li>Nunca compartilhe seus códigos de acesso.</li>
+            </ul>
+
+            <div class="tip">
+                💡 <strong>Importante:</strong> desconfie de mensagens
+                que pedem sua senha ou prometem prêmios inesperados.
+            </div>
+        </div>
+    </article>
+
+    <!-- PUBLICAÇÃO 7 -->
+    <article class="post" id="computador">
+        <div class="post-content">
+            <span class="category">Tecnologia</span>
+            <h2>⚡ 5 maneiras de melhorar o desempenho do computador</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <ol>
+                <li>Feche os programas que não está usando.</li>
+                <li>Desinstale aplicativos desnecessários.</li>
+                <li>Mantenha o sistema atualizado.</li>
+                <li>Confira o espaço disponível no disco.</li>
+                <li>Faça verificações de segurança regularmente.</li>
+            </ol>
+
+            <p>
+                Essas ações podem ajudar a manter seu computador
+                organizado e funcionando melhor.
+            </p>
+        </div>
+    </article>
+
+    <!-- PUBLICAÇÃO 8 -->
+    <article class="post" id="javascript">
+        <div class="post-content">
+            <span class="category">Programação</span>
+            <h2>✨ Conheça o JavaScript</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <p>
+                O JavaScript permite adicionar interatividade
+                aos sites, como botões que respondem a cliques.
+            </p>
+
+            <p>Veja um exemplo:</p>
+
+            <pre><code>&lt;button onclick="alert('Olá!')"&gt;
+    Clique aqui
+&lt;/button&gt;</code></pre>
+
+            <p>
+                Ao clicar no botão, o navegador mostrará
+                uma mensagem na tela.
+            </p>
+        </div>
+    </article>
+
+    <!-- PUBLICAÇÃO 9 -->
+    <article class="post" id="ferramentas">
+        <div class="post-content">
+            <span class="category">Dicas e tutoriais</span>
+            <h2>🛠️ Ferramentas para aprender programação</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <p>Algumas ferramentas úteis para iniciantes:</p>
+
+            <ul>
+                <li><strong>Visual Studio Code:</strong> editar códigos.</li>
+                <li><strong>Google Chrome:</strong> testar páginas web.</li>
+                <li><strong>GitHub:</strong> guardar e compartilhar projetos.</li>
+                <li><strong>MDN Web Docs:</strong> consultar documentação.</li>
+            </ul>
+
+            <div class="tip">
+                💡 <strong>Dica:</strong> pratique criando projetos
+                pequenos antes de começar algo muito grande.
+            </div>
+        </div>
+    </article>
+
+    <!-- PUBLICAÇÃO 10 -->
+    <article class="post" id="futuro">
+        <div class="post-content">
+            <span class="category">Novas tecnologias</span>
+            <h2>🌐 Como a tecnologia pode transformar o futuro</h2>
+            <p class="author">Por: Sidiley</p>
+
+            <p>
+                A tecnologia está presente na educação, na comunicação,
+                na indústria e em muitas outras áreas.
+            </p>
+
+            <p>
+                Inteligência artificial, robótica, computação em nuvem
+                e segurança digital são temas importantes para quem
+                deseja acompanhar as mudanças do mundo.
+            </p>
+
+            <p>
+                Aprender novas habilidades é uma ótima maneira
+                de se preparar para as oportunidades do futuro.
+            </p>
+        </div>
+    </article>
+
+</main>
+
+<!-- BARRA LATERAL -->
+<aside>
+
+    <section class="sidebar-box">
+        <h3 class="sidebar-title">⭐ Categorias</h3>
+        <div class="sidebar-content">
+            <ul>
+                <li><a href="#primeiro-post">💻 Tecnologia</a></li>
+                <li><a href="#html-css">💻 Programação</a></li>
+                <li><a href="#inteligencia-artificial">🤖 Inteligência Artificial</a></li>
+                <li><a href="#dicas">💡 Dicas e Tutoriais</a></li>
+                <li><a href="#seguranca">🔐 Segurança Digital</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sidebar-box">
+        <h3 class="sidebar-title">🔥 Posts Recentes</h3>
+        <div class="sidebar-content">
+            <ul>
+                <li><a href="#dicas">5 dicas para começar a programar</a></li>
+                <li><a href="#html-css">Como criar sua primeira página HTML</a></li>
+                <li><a href="#inteligencia-artificial">O que é inteligência artificial?</a></li>
+                <li><a href="#css">Para que serve o CSS?</a></li>
+                <li><a href="#seguranca">Como proteger suas contas</a></li>
+                <li><a href="#javascript">Conheça o JavaScript</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sidebar-box" id="sobre">
+        <h3 class="sidebar-title">👤 Sobre Mim</h3>
+        <div class="sidebar-content">
+            <p>
+                Olá! Eu sou o Sidiley, criador deste blog.
+                Aqui compartilho meu aprendizado, dicas e novidades
+                sobre tecnologia e programação.
+            </p>
+        </div>
+    </section>
+
+    <section class="sidebar-box">
+        <h3 class="sidebar-title">💡 Dica do Dia</h3>
+        <div class="sidebar-content">
+            <p>
+                Aprenda algo novo todos os dias e pratique
+                escrevendo seus próprios códigos!
+            </p>
+        </div>
+    </section>
+
+</aside>
+</div>
+
+<footer id="contato">
+    <h3>💻 Meu Blog Tech</h3>
+    <p>Conhecimento, tecnologia e programação para todos.</p>
+    <p>Feito por Sidiley | © 2026</p>
+</footer>
+
+</body>
+</html>
